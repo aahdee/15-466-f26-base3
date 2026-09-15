@@ -36,7 +36,7 @@ struct PlayMode : Mode {
 	glm::quat lower_leg_base_rotation;
 	float wobble = 0.0f;
 
-	float arrow_speed = 0.1f;
+	float arrow_speed = 0.4f;
 	bool arrow_is_moving = true;
 	float score = -1.0f;
 

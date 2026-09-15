@@ -62,7 +62,7 @@ PlayMode::PlayMode() : scene(*hexapod_scene) {
 
 	//start music loop playing:
 	// (note: position will be over-ridden in update())
-	leg_tip_loop = Sound::loop_3D(*honk_sample, 10.0f, arrow->position, 0.5f);
+	leg_tip_loop = Sound::loop_3D(*honk_sample, 20.0f, arrow->position, 0.5);
 }
 
 PlayMode::~PlayMode() {
@@ -102,9 +102,9 @@ void PlayMode::update(float elapsed) {
 	leg_tip_loop->set_position(arrow->position, 1.0f / 60.0f);
 
 
-	if (arrow_is_moving) arrow->position = arrow->position + glm::vec3(0.0f, -arrow_speed, 0.0f);
+	if (arrow_is_moving) arrow->position = arrow->position + glm::vec3(arrow_speed, 0.0f, 0.0f);
 	else{
-		score = std::abs(target->position.y - arrow->position.y);
+		score = std::abs(target->position.x - arrow->position.x);
 	}
 
 
