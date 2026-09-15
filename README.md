@@ -1,8 +1,8 @@
-# (TODO: your game's title)
+# "I'm sure that you can get a sound game done in two and a half hours" --Jim McCann
 
-Author: (TODO: your name)
+Author: Aren Davey
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: Using the doppler effect, try your best to land the cube on the target. A lower score is better
 
 Screen Shot:
 
@@ -10,6 +10,6 @@ Screen Shot:
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+press space to stop the target (click on the game to focus the window first)
 
 This game was built with [NEST](NEST.md).
